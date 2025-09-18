@@ -1,0 +1,51 @@
+/* frontend/assets/css/main.css */
+
+/* Import font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&display=swap');
+
+:root {
+  /* Colors - Dark theme with neon cyan accents */
+  --primary-color: darkcyan; /* Dark cyan for primary actions */
+  --primary-color-hover: lightcyan; /* Lighter cyan for hover states */
+  --secondary-color: #ff00ff; /* Magenta for contrast */
+  --background-color: #0a0f1e; /* Deep space blue */
+  --surface-color: #1a2035; /* Lighter blue for cards/headers */
+  --text-color: #d0d8f0; /* Off-white with a blue tint */
+  --text-color-light: #0a0f1e; /* Dark text for light buttons */
+  --border-color: rgba(0, 240, 255, 0.3); /* Semi-transparent cyan */
+
+  /* Fonts */
+  --font-family-sans: 'Chakra Petch', sans-serif;
+
+  /* Spacing */
+  --spacing-small: 8px;
+  --spacing-medium: 16px;
+  --spacing-large: 32px;
+
+  /* UI Elements */
+  --border-radius: 8px;
+  --glow-effect: 0 0 6px rgba(0, 240, 255, 0.7);
+}
+
+/* General body styles to apply the theme */
+body {
+  margin: 0;
+  /* Add a subtle gradient to the background for depth */
+  background-color: var(--background-color);
+  background-image: radial-gradient(circle at top left, var(--surface-color), var(--background-color) 40%);
+  background-attachment: fixed;
+  color: var(--text-color);
+  font-family: var(--font-family-sans);
+  
+  /* Improves font rendering on some displays */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Optional: Add a helper class for a "glassmorphism" effect you can use on containers */
+.glass-card {
+  background: rgba(26, 32, 53, 0.5); /* Semi-transparent surface */
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+}
