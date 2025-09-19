@@ -49,3 +49,55 @@ body {
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius);
 }
+
+
+/* Card Style */
+.card {
+  background: rgba(26, 32, 53, 0.5); /* Semi-transparent surface */
+  backdrop-filter: blur(10px);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: var(--spacing-large);
+}
+
+/* Button Styles */
+.btn {
+  background-color: var(--primary-color);
+  color: var(--text-color-light);
+  border: none;
+  border-radius: var(--border-radius);
+  padding: var(--spacing-medium);
+  font-family: inherit;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  box-shadow: var(--glow-effect);
+  text-align: center;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: var(--primary-color-hover);
+  transform: translateY(-2px);
+}
+
+/* Text Styles */
+.text-primary {
+  color: var(--primary-color);
+  text-shadow: var(--glow-effect);
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: var(--spacing-small);
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: var(--text-color);
+  opacity: 0.8;
+  margin: 0;
+}
